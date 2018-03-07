@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Title: {{ employee.FirstName}} {{employee.LastName}}</h1>
+
+  <p><strong>Name:</strong> <a href="">{{ employee.FirstName }}</a></p> <!-- employee detail link not yet defined -->
+  <p><strong>Surname:</strong> <a href="">{{ employee.LastName }}</a></p> <!-- employee detail link not yet defined -->
+  <p><strong>DOB:</strong> <a href="">{{ employee.date_of_birth }}</a></p> <!-- employee detail link not yet defined -->
+ 
+{% endblock %}

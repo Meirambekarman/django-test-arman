@@ -9,6 +9,11 @@ class Location(models.Model):
     city = models.CharField(max_length=50,
                             help_text="Қаланың атын еңгізіңіз")
 
+    def get_absolute_url(self):
+        """
+        Returns the url to access a particular department instance.
+        """
+        return reverse('location-detail', args=[str(self.id)])
     def __str__(self):
         """
         String for representing the Model object (in Admin site etc.)
